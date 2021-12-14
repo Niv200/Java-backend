@@ -19,3 +19,17 @@ This is a simple backend allowing the user to create and manage persons and thei
 - localhost:8080/api/addbalance/{id} - adds balance to the user based on their current amount.
 - localhost:8080/api/getperson/{id} - return person object based on the ID
 - localhost:8080/api/test - used to test random stuff.
+
+### Request example
+
+to create a new person, forward the following template in the post request to url /api/createperson
+
+```
+{
+"name": "name",
+"familyName": "familyName",
+"age": age,
+"balance": balance,
+"country": "Country"
+}
+```
