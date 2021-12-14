@@ -62,6 +62,12 @@ public class PersonController {
 		return personService.getPerson(id);
 	}
 	
+	//Return person based on {id}
+	@GetMapping("/getbalance/{id}")
+	public int getBalance(@PathVariable("id") String id) {
+		return personService.getPerson(id).get().getBalance();
+	}
+	
 	//Test route
 	@GetMapping("/test")
 	public String test() {
